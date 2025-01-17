@@ -1,4 +1,4 @@
-* {  
+p, h1 {  
     font-family: "Playwrite VN", serif;
 }
 
@@ -25,6 +25,11 @@ a {
 
 .main-img {
     width: 50%;
+}
+
+.main-text, li {
+    font-family: "Funnel Sans", serif;
+    font-size: 1.2rem;
 }
 
 /*FOOTER*/
