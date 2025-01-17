@@ -1,35 +1,41 @@
 p, h1 {  
-    font-family: "Playwrite VN", serif;
+  font-family: "Playwrite VN", serif;
 }
 
 /* HEADER */
 
 #logo {
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: 2px solid black;
-    display: inline;
-    padding: 5px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 /*MAIN*/
 
 .main-img {
-    width: 50%;
+  width: 30%;
 }
 
 .main-text, li {
-    font-family: "Funnel Sans", serif;
-    font-size: 1.2rem;
+  font-family: "Funnel Sans", serif;
+  font-size: 1.2rem;
+}
+
+/*FORM*/
+form {
+  font-family: "Funnel Sans", serif;
+  font-size: 1.2rem;
 }
 
 /*FOOTER*/
