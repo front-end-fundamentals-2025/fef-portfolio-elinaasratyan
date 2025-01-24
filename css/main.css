@@ -1,6 +1,6 @@
 * {
   font-family: "Funnel Sans", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 p, h1 {  
@@ -8,6 +8,11 @@ p, h1 {
 }
 
 /* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+}
 
 #logo {
   font-weight: 600;
@@ -18,12 +23,36 @@ p, h1 {
 }
 
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0;
 }
 
+li {
+  margin-left: 3rem;
+}
+
 a {
   color: black;
+}
+
+.headers-main-page {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  header, ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  ul {
+    margin-top: 0;
+  }
+
+  li {
+    margin-left: 0;
+  }
 }
 
 /*MAIN*/
@@ -32,19 +61,38 @@ a {
   width: 30%;
 }
 
-.project-pictures {
-  width: 25%;
-}
-
 .main-text {
   font-family: "Funnel Sans", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+/*CATEGORY SECTION*/
+
+figure {
+  margin-left: 0;
+}
+
+.project-pictures {
+  width: 70%;
+}
+
+@media screen and (min-width: 550px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*FORM*/
 form {
   font-family: "Funnel Sans", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /*FOOTER*/
