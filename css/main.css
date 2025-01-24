@@ -1,3 +1,8 @@
+* {
+  font-family: "Funnel Sans", serif;
+  font-size: 1.2rem;
+}
+
 p, h1 {  
   font-family: "Playwrite VN", serif;
 }
@@ -27,7 +32,11 @@ a {
   width: 30%;
 }
 
-.main-text, li {
+.project-pictures {
+  width: 25%;
+}
+
+.main-text {
   font-family: "Funnel Sans", serif;
   font-size: 1.2rem;
 }
