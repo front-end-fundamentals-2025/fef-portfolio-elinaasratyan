@@ -57,6 +57,12 @@ a {
 
 /*MAIN*/
 
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .main-img {
   width: 30%;
 }
@@ -64,6 +70,10 @@ a {
 .main-text {
   font-family: "Funnel Sans", serif;
   font-size: 1rem;
+  text-align: justify;
+  padding-right: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /*CATEGORY SECTION*/
@@ -89,6 +99,21 @@ figure {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .about-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-img {
+    width: 50%;
+  }
+
+  .main-text {
+    padding-right: 0;
+  }
+}
+
 /*FORM*/
 form {
   font-family: "Funnel Sans", serif;
@@ -99,4 +124,36 @@ form {
 footer {
   margin-top: 2rem;
   border-top: 2px solid black;
+}
+
+/*INDIVIDUAL PAGES*/
+.individual-pictures {
+  width: 30%;
+}
+
+.individual-pages-text {
+  font-family: "Funnel Sans", serif;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.individual-pages {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .individual-pages {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .individual-pages-text {
+    font-family: "Funnel Sans", serif;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
