@@ -26,10 +26,9 @@ ul {
   display: flex;
   list-style: none;
   padding-left: 0;
-}
-
-li {
-  margin-left: 3rem;
+  gap: 20px;
+  width: 100%;
+  margin-left: 20px;
 }
 
 a {
@@ -48,9 +47,6 @@ a {
   
   ul {
     margin-top: 0;
-  }
-
-  li {
     margin-left: 0;
   }
 }
@@ -156,5 +152,34 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+  }
+}
+
+/*ANIMATIONS*/
+nav a {
+  background-color: #ede5dc;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  animation-name: none;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  animation-name: background-animation;
+}
+
+
+@keyframes background-animation {
+  0% {
+    background-color: #ede5dc;
+  }
+  100% {
+    background-color: white;
   }
 }
