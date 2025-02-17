@@ -186,6 +186,27 @@ nav a:hover {
   }
 }
 
+/* 🌙 Dark Mode: Change button styles */
+.dark-mode nav a {
+  background-color: #121212;
+  color: #ede5dc;
+  ;
+}
+
+/* Dark Mode: Change button hover effect */
+.dark-mode nav a:hover {
+  animation-name: dark-mode-background-animation;
+}
+
+@keyframes dark-mode-background-animation {
+  0% {
+    background-color: #121212;
+  }
+  100% {
+    background-color: #333; /* Slightly lighter black */
+  }
+}
+
 .project-pictures {
   animation-name: none;
   animation-duration: 0.3s;
@@ -225,3 +246,32 @@ nav a:hover {
   }
 }
 
+/* Default light mode */
+body {
+  background-color: #ede5dc;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ede5dc;
+}
+
+/* Button styling */
+#darkModeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #ede5dc;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#darkModeToggle:hover {
+  background-color: #555;
+}
