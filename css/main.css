@@ -255,7 +255,12 @@ body {
 
 /* Dark mode styles */
 .dark-mode {
-  background-color: #121212;
+  background-color: black;
+  color: #ede5dc;
+}
+
+/* Dark mode for project text */
+.dark-mode figcaption {
   color: #ede5dc;
 }
 

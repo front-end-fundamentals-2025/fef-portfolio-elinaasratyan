@@ -1,24 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Find the button and the page
-    let button = document.getElementById("darkModeToggle");
-    let body = document.body;
+const button = document.getElementById("darkModeToggle");
+const body = document.querySelector("body")
+
+button.addEventListener("click", function () {
+  // This is one adds a dark mode when it is not present and removes it if it is present
+  // It is taken from here: https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+  body.classList.toggle("dark-mode");
   
-    // Check if Dark Mode was ON before (saved in localStorage)
-    let darkMode = localStorage.getItem("darkMode");
-  
-    if (darkMode === "on") {
-      body.classList.add("dark-mode"); // Apply dark mode by adding the class dark-mode to the body tag and activating the dark ode styles from the css file
-    }
-  
-    // When button is clicked, switch colors AND save the setting
-    button.addEventListener("click", function () {
-      body.classList.toggle("dark-mode"); // Add/remove dark mode
-  
-      // If dark mode is now ON, save it as "on". Otherwise, save as "off"
-      if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("darkMode", "on");
-      } else {
-        localStorage.setItem("darkMode", "off");
-      }
-    });
-  });
+  // Changing button text
+  if (body.classList.contains("dark-mode")) {
+    button.textContent = "☀️ Light Mode";
+  } else {
+    button.textContent = "🌙 Dark Mode";
+  }
+});
